@@ -68,18 +68,20 @@ address {
 }
 /*header*/
 .header {
-  border-bottom: 1px solid var(--color-border)
+  border-bottom: 1px solid var(--color-border);
+ 
 }
 .header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 24px;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-nav {
   display: flex;
   align-items: center;
-
+  
   flex-grow: 1;
 }
 .header-contacts {
@@ -105,6 +107,7 @@ address {
   display: flex;
   gap: 40px;
   flex-grow: 1;
+  
  
 }
 .nav-link {
@@ -118,15 +121,17 @@ address {
   padding: 24px 0;
  
 }
-.nav-link ::after {
-
-  content: '2';
+.nav-link:after {
+  content: '';
   position: absolute;
   left: 0;
   bottom: -1px;
   height: 4px;
   background-color: var(--color-press-state);
   border-radius: 2px;
+  width: 48px;
+
+flex-shrink: 0;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -139,10 +144,12 @@ address {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--color-press-state);
+  transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 /*hero section*/
@@ -161,6 +168,7 @@ address {
   background-color: var(--color-title-backgraund);
   background-size: cover;
   padding: 188px 0; 
+  
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
@@ -321,6 +329,7 @@ background-color: var(--color-brand);
 }
 .portfolio-item {
   flex-basis: calc((100% - 48px) / 3);
+ 
 }
 .our-portfolio {
   padding: 32px 16px;
@@ -360,7 +369,7 @@ background-color: var(--color-brand);
   width: 100%; 
 }
 .portfolio-overlay {
-box-shadow: зі значенням 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-title {
   font-size: 20px;
@@ -377,6 +386,7 @@ box-shadow: зі значенням 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 
 }
 .portfolio-item:hover .portfolio-overlay {
   transform: translateY(0);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 
 /* END portfolio section*/
