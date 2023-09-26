@@ -160,8 +160,7 @@ flex-shrink: 0;
   
   text-align: center;
   background-image: linear-gradient(
-    var(--color-bg-gr), 
-  var(--color-bg-gr)
+    to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)
   ),
   url(../images/people-office.jpg)
  ;
@@ -172,7 +171,7 @@ flex-shrink: 0;
   padding: 188px 0; 
   
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+  max-width: 1440px;
 }
 .hero-title {
   color: var(--color-text-light);
