@@ -255,6 +255,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .ourteam-list {
   display: flex;
   gap: 24px;
+ 
 }
 .ourteam-item {
   flex-basis: calc((100% - 72px) / 4);
@@ -284,7 +285,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 height: 100%;
 background-color: var(--color-brand);
 }
-.team-icon-link:hover {
+.team-icon-link:hover,
+.team-icon-link:focus {
   background-color: var(--color-press-state);
 }
 .ourteam {
@@ -320,6 +322,7 @@ background-color: var(--color-brand);
   display: flex;
   gap: 24px;
   justify-content: center;
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .icon-list {
   display: flex;
