@@ -284,6 +284,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
 height: 100%;
 background-color: var(--color-brand);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .team-icon-link:hover,
 .team-icon-link:focus {
@@ -417,6 +418,8 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 .footer {
   background: var(--color-title-backgraund);
   padding: 100px 0;
+  display: flex;
+  align-items: baseline;
 }
 
 .container {
